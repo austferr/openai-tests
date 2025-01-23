@@ -19,3 +19,5 @@ while True:
 	print("ChatGPT:", assistant_response.strip())
 	chat_log.append({"role": "assistant", "content": assistant_response.strip()})
 	print(response.usage.total_tokens)
+	
+    
