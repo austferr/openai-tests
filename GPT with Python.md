@@ -1,4 +1,4 @@
-> [!error]- Resources
+> ## Resources
 > **Videos**
 > [Use OpenAI's ChatGPT in Python](https://www.youtube.com/watch?v=YVFWBJ1WVF8)
 > [AI and Python - OpenAI API with Python Introduction](https://www.youtube.com/watch?v=I6T9Ztn0S-M)
@@ -10,8 +10,8 @@
 > [Jupyter Notebooks](https://www.promptingguide.ai/notebooks)
 > [Prompting Techniques](https://www.promptingguide.ai/techniques)
 > [Risks & Misuses](https://www.promptingguide.ai/risks)
-##### API
-> [!warning]- Generate Keys
+## API
+**Generate Keys**
 > [OpenAI Developer Platform](https://platform.openai.com)
 ##### Prompt Schema
 each individual request is generated with the context information.
