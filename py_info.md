@@ -40,9 +40,6 @@ each individual request is generated with the context information.
 costs *# of* **tokens**.
 
 ```Python
-import openai
-API_KEY = open("file_name", "r").read()
-openai.api_key = API_KEY
 
 response = openai.ChatCompletion.create(
 	model="gpt-version",
@@ -98,7 +95,6 @@ GPT creates a URL to host the image.
 
 ```Python
 from openai import OpenAI
-
 
 client = OpenAI()
 
