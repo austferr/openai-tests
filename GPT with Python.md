@@ -1,3 +1,5 @@
+-----
+
 ## Resources
 
 **Videos**
@@ -27,7 +29,6 @@
 ## API
 
 > **GENERATE KEYS**
-
 > [OpenAI Developer Platform](https://platform.openai.com)
 
 -----
@@ -35,6 +36,7 @@
 ## Prompt Schema
 
 each individual request is generated with the context information.
+
 costs *# of* **tokens**.
 
 ```Python
