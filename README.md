@@ -12,6 +12,16 @@ in PowerShell use:
 setx OPENAI_API_KEY "key"
 ```
 
+sets a local environment variable that is called using:
+
+```
+import os
+from openai import OpenAI
+
+client = OpenAI()
+client.api_key = os.environ.get("OPENAI_API_KEY")
+```
+
 -----
 
 ## gpt_simple.py
