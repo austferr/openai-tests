@@ -14,7 +14,7 @@ should save to User folder and provide URL to view image.
 -----
 
 ### issues
-**from openai import OpenAI**
-does not seem to import properly in VSC.
-
+~~from openai import OpenAI~~
+~~does not seem to import properly in VSC.~~
+fixed in: 382dc1a
 -----
