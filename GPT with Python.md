@@ -1,21 +1,35 @@
-> ## Resources
-> **Videos**
-> [Use OpenAI's ChatGPT in Python](https://www.youtube.com/watch?v=YVFWBJ1WVF8)
-> [AI and Python - OpenAI API with Python Introduction](https://www.youtube.com/watch?v=I6T9Ztn0S-M)
-> **OpenAI**
-> [Quickstart](https://platform.openai.com/docs/quickstart)
-> [Pricing](https://openai.com/api/pricing/)
-> **Prompt Engineering**
-> [Prompt Engineering Guide](https://www.promptingguide.ai/)
-> [Jupyter Notebooks](https://www.promptingguide.ai/notebooks)
-> [Prompting Techniques](https://www.promptingguide.ai/techniques)
-> [Risks & Misuses](https://www.promptingguide.ai/risks)
+## Resources
+
+**Videos**
+
+[Use OpenAI's ChatGPT in Python](https://www.youtube.com/watch?v=YVFWBJ1WVF8)
+[AI and Python - OpenAI API with Python Introduction](https://www.youtube.com/watch?v=I6T9Ztn0S-M)
+
+**OpenAI**
+
+[Quickstart](https://platform.openai.com/docs/quickstart)
+[Pricing](https://openai.com/api/pricing/)
+
+**Prompt Engineering**
+
+[Prompt Engineering Guide](https://www.promptingguide.ai/)
+[Jupyter Notebooks](https://www.promptingguide.ai/notebooks)
+[Prompting Techniques](https://www.promptingguide.ai/techniques)
+[Risks & Misuses](https://www.promptingguide.ai/risks)
+
+-----
+
 ## API
+
 **Generate Keys**
+
 > [OpenAI Developer Platform](https://platform.openai.com)
-##### Prompt Schema
+
+## Prompt Schema
+
 each individual request is generated with the context information.
 costs *# of* **tokens**.
+
 ```Python
 import openai
 API_KEY = open("file_name", "r").read()
@@ -27,10 +41,15 @@ response = openai.ChatCompletion.create(
 
 print(response)
 ```
-##### Roles
+
+### Roles
+
 **USER** the user requesting
+
 **ASSISTANT** GPT itself
+
 **SYSTEM** context information
+
 ```Python
 response = openai.ChatCompletion.create(
 	model="gpt-version",
@@ -38,6 +57,8 @@ response = openai.ChatCompletion.create(
 	{"role": "system", "content": "You are a a helpful assistant that writes Python scripts?"},
 	{"role": "user", "content": "What script can I use to create a working clock?"}]
 ```
+-----
+
 ### Chat System
 appends chat log with responses.
 ```Python
