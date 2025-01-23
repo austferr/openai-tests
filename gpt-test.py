@@ -1,7 +1,10 @@
 
 # Chat Function with ChatGPT
 
-import openai
+from openai import OpenAI
+
+client = OpenAI(
+)
 
 chat_log = []
 

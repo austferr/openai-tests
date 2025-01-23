@@ -1,5 +1,5 @@
 
-from openai import OpenAI                  # need check imports
+from openai import OpenAI           # need check imports
 from requests import get                   # adds get from requests
 
 client = OpenAI()
