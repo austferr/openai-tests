@@ -6,11 +6,18 @@ client = OpenAI()                                         # set new alias.
 
 client.api_key = os.environ.get("OPENAI_API_KEY")         # pulls env var OPENAI_API_KEY.
 
-response = client.ChatCompletion.create(                  # defines response as output
-	model="gpt-version",                                  # model version
-	messages=[
-	{"role": "system", "content": "You are a a helpful assistant that writes Python scripts?"},           # prompt example.
-	{"role": "user", "content": "What script can I use to create a working clock?"}]                      # prompt example.
+response = client.chat.completions.create(
+  model="gpt-4o-mini",
+  messages=[{"role": "system", "content": "You are a a helpful assistant that writes can explain weather phenomenon?"},           # prompt example.
+	{"role": "user", "content": "What is the difference between a tornado and a twister?"}],
+  response_format={
+    "type": "text"
+  },
+  temperature=1,
+  max_completion_tokens=5,
+  top_p=1,
+  frequency_penalty=0,
+  presence_penalty=0
 )
 
-print(response)                                           # print response in full.
+print(response.choices[0].message.content)                                           # print response.
